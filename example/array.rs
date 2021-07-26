@@ -21,7 +21,7 @@ fn main() {
     println!("数组xs的长度是:{}",xs.len());
 
     // 数组是在栈中分配的
-    println!("数组xs占用的字节是:{}",mem::size_of_val(&xs))
+    println!("数组xs占用的字节是:{}",mem::size_of_val(&xs));
 
     // 数组可以自动被借用成为slice
     println!("借用整个数组作为一个切片");
