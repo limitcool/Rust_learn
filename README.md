@@ -47,3 +47,11 @@ std::mem::size_of_val()
  // Rust 对这种情况提供了 `ref`。它更改了赋值行为，从而可以对具体值创建引用。
     // 下面这行将得到一个引用。
     let ref _is_a_reference = 3;
+
+    let mut optional =Some(0);
+    // 这读作:当 'let' 将 'optional' 解构成 'Some(i)' 时，就
+    // 执行语句块 ('{}'),否则就 'break'
+    while let Some(i) = optional {
+
+    // 'if let'结构读作:若 'let' 将'number'解构成 'Some(i)',则执行语句块
+    if let Some(i) = number{
