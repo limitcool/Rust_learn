@@ -55,3 +55,7 @@ std::mem::size_of_val()
 
     // 'if let'结构读作:若 'let' 将'number'解构成 'Some(i)',则执行语句块
     if let Some(i) = number{
+
+# method
+静态方法使用双冒号调用
+实例方法使用点运算符来调用
