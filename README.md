@@ -59,3 +59,13 @@ std::mem::size_of_val()
 # method
 静态方法使用双冒号调用
 实例方法使用点运算符来调用
+
+crate_type 属性可以告知编译器 crate 是一个二进制的可执行文件还是一个库（甚至是哪种类型的库），crate_name 属性可以设定 crate 的名称。
+
+不过，一定要注意在使用 cargo 时，这两种类型时都没有作用。由于大多数 Rust 工程都使用 cargo，这意味着 crate_type 和 crate_name 的作用事实上很有限。
+
+新建 lib.rs 文件，编写代码如下：
+// 这个 crate 是一个库文件
+#![crate_type = "lib"]
+// 库的名称为 “rary”
+#![crate_name = "rary"]
