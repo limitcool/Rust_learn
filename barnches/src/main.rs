@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 fn main() {
     let number = 3;
     // 条件必须为布尔值

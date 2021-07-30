@@ -1,3 +1,4 @@
+#![allow(unused_variables)]
 fn main(){
     let mut x = 5;
     println!("这个值是：{}",x);
