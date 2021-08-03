@@ -6,5 +6,3 @@ enum Resutl<T,E> {
     Ok(T),
     Err(E),
 }
-
-+
