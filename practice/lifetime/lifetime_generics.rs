@@ -1,6 +1,14 @@
 fn main() {
-    let string1 = String::from("abcd");
-    let string2 = "xyz";
-    let result = longest(string1.as_str(),string2);
-    println!("")
+    let string1 = String::from("hello");
+    let string2 = String::from("wewewewe");
+    let result=longest(string1.as_str(),string2.as_str());
+    println!("最长的是{}",result);
+}
+
+fn longest<'a>(x:&'a str,y:&'a str) -> &'a str {
+    if x.len() > y.len() {
+        x
+    }else {
+        y
+    }
 }
